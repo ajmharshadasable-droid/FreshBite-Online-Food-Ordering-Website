@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshBite | Register</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <div class="register-box">
+
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="FreshBite Logo">
+            </div>
+
+            <h2>Create Account</h2>
+
+            <p>Join FreshBite and order your favourite food.</p>
+
+            <form id="registerForm">
+
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                        onclick="togglePassword('password',this)"></i>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="confirmPassword"
+                        placeholder="Confirm Password" required>
+
+                    <i class="fa-solid fa-eye toggle-password"
+                        onclick="togglePassword('confirmPassword',this)"></i>
+                </div>
+
+                <button type="submit" class="register-btn">
+                    Register
+                </button>
+
+            </form>
+
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">Login</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+</html>

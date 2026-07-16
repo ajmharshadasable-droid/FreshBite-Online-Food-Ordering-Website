@@ -1,0 +1,233 @@
+/* Banner */
+
+.page-banner{
+    width:100%;
+    height:250px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("images/banner.jpeg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+}
+
+.banner-content h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.banner-content p{
+    font-size:16px;
+}
+
+/* Checkout */
+
+.checkout{
+    padding:60px 8%;
+    background:#f8f8f8;
+}
+
+.checkout-container{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+/* Billing Form */
+
+.checkout-form{
+    flex:2;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.checkout-form h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.checkout-form input,
+.checkout-form textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+    box-sizing:border-box;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus{
+    border-color:#ff5722;
+}
+
+.checkout-form textarea{
+    resize:none;
+    height:100px;
+}
+
+.checkout-form h3{
+    margin:20px 0 10px;
+}
+
+.checkout-form label{
+    display:block;
+    margin-bottom:12px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.checkout-form input[type="radio"]{
+    width:auto;
+    margin-right:8px;
+}
+
+.checkout-form button{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    background:#ff5722;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkout-form button:hover{
+    background:#e64a19;
+}
+
+/* Order Summary */
+
+.order-summary{
+    flex:1;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    position:sticky;
+    top:100px;
+}
+
+.order-summary h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.order-summary p,
+.order-summary h3{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    font-size:17px;
+}
+
+.order-summary hr{
+    margin:20px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.order-summary h3{
+    color:#ff5722;
+}
+
+/* Footer */
+
+.footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.checkout-container{
+    flex-direction:column;
+}
+
+.checkout-form,
+.order-summary{
+    width:100%;
+}
+
+.order-summary{
+    position:static;
+}
+
+.banner-content h1{
+    font-size:32px;
+}
+
+}
+.navbar{
+
+    background:#111;
+
+}
+
+.navbar{
+
+    padding:20px 80px;
+
+}
+.coupon-box{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.coupon-box input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.coupon-box button{
+    padding:12px 20px;
+    background:#28a745;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.coupon-box button:hover{
+    background:#218838;
+}
+
+#couponMessage{
+    margin-top:10px;
+    color:green;
+    font-weight:bold;
+}
+/* Delivery Time */
+
+#deliveryTime{
+    width:100%;
+    padding:14px;
+    margin:15px 0 25px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    cursor:pointer;
+}
+
+#deliveryTime:focus{
+    border-color:#ff5a00;
+}

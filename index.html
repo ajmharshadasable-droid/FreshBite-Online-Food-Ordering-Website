@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+<div class="top-bar">
+    <p>
+        🍕 Flat 50% OFF on First Order &nbsp;&nbsp;&nbsp;
+        🚚 Free Delivery Above ₹299 &nbsp;&nbsp;&nbsp;
+        🍔 Buy 1 Get 1 Free Every Friday &nbsp;&nbsp;&nbsp;
+        ⭐ Fresh Food | Fast Delivery
+    </p>
+
+</div>
+        <!-- Navbar -->
+
+        <nav class="navbar">
+
+            <img src="images/logo.jpeg" alt="Logo">
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="restaurant.html">Restaurants</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+
+                <li><a href="#"><i class="fa-regular fa-heart" id="heart" onclick="likefood()"></i></a></li>
+
+            </ul>
+
+<a href="login.html">
+    <button class="login-btn">Login</button>
+</a>
+        </nav>
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h4>Delicious Food</h4>
+
+                <h1>Delivered Hot</h1>
+
+                <h2>To Your Doorstep</h2>
+
+                <p>
+                    Craving something tasty?<br>
+                    We deliver your favourite meals fast and fresh.
+                </p>
+
+                <div class="hero-btn">
+
+                    <button class="order-btn" onclick="ordernow()">
+                        Order Now
+                    </button>
+
+                    <a href="#">
+                        <i class="fa-solid fa-circle-play"></i>
+                        Watch Video
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <!-- Search Bar -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <div class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>Deliver To</span>
+
+            </div>
+
+            <input type="text" id="search"
+                placeholder="Search Food or Restaurants">
+
+            <button onclick="searchfood()">Search</button>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+<!-- Categories -->
+
+<section class="categories">
+
+    <div class="title">
+        <h2>Categories</h2>
+        <a href="#">View All</a>
+    </div>
+
+    <div class="category-box">
+
+        <div class="item" data-name="pizza">
+            <img src="images/pizza.png" alt="Pizza">
+            <p>Pizza</p>
+        </div>
+
+        <div class="item" data-name="burger">
+            <img src="images/burger.png" alt="Burger">
+            <p>Burger</p>
+        </div>
+
+        <div class="item" data-name="biryani">
+            <img src="images/biryani.jpeg" alt="Biryani">
+            <p>Biryani</p>
+        </div>
+
+        <div class="item" data-name="pasta">
+            <img src="images/pasta.png" alt="Pasta">
+            <p>Pasta</p>
+        </div>
+
+        <div class="item" data-name="desserts">
+            <img src="images/Dreamy Ice Cream Delight.jpeg" alt="Desserts">
+            <p>Desserts</p>
+        </div>
+
+        <div class="item" data-name="drinks">
+            <img src="images/drinks.png" alt="Drinks">
+            <p>Drinks</p>
+        </div>
+
+    </div>
+
+</section>
+    
+    <!----------popular dishes-->
+    <section class="popular">
+<div class="title">
+    <h2>
+        Popular Dishes
+    </h2>
+    <a href="#">view all</a>
+
+</div>
+<div class="popular-box">
+    <div class="food-card">
+        <img src="images/pizza.png" alt="">
+<h3>Margherita Pizza</h3>
+<div class="price-rating">
+    <span>$8.99</span>
+    <span>⭐ 4.5</span>
+
+</div>
+    </div>
+    <div class="food-card">
+
+            <img src="images/burger.png" alt="">
+
+            <h3>Chicken Burger</h3>
+
+            <div class="price-rating">
+
+                <span>$6.99</span>
+
+                <span>⭐ 4.3</span>
+
+            </div>
+
+        </div>
+
+        <div class="food-card">
+
+            <img src="images/pasta.png" alt="">
+
+            <h3>Cheese Pasta</h3>
+
+            <div class="price-rating">
+
+                <span>$7.49</span>
+
+                <span>⭐ 4.4</span>
+
+            </div>
+
+        </div>
+
+        <div class="food-card">
+
+            <img src="images/biryani.jpeg" alt="">
+
+            <h3>Veg Biryani</h3>
+
+            <div class="price-rating">
+
+                <span>$8.49</span>
+
+                <span>⭐ 4.6</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!------Special Offer-->
+<section class="Offer">
+    <div class="Offer-content">
+        <h2>
+          Special Offer  
+        </h2>
+        <h1>Get 50% off</h1>
+        <p>On Your First Order</p>
+        <button>Order Now</button>
+
+    </div>
+
+</section>
+<!------top restourant-->
+<section class="restaurent">
+    <div class="title">
+        <h2>Top Restaurants</h2>
+        <a href="#">View All</a>
+
+    </div>
+    <div class="restaurant-box">
+        <div class="restaurant-card">
+            <img src="images/dominos logo.jpeg" alt="">
+            <p>Domino's</p>
+
+        </div>
+        <div class="restaurant-card">
+            <img src="images/Pizza Hut.jpeg">
+            <p>Pizza Hut</p>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="images/kfc logo.jpeg">
+            <p>KFC</p>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="images/macdonald.jpeg">
+            <p>McDonald's</p>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="images/File_Burger King Logo_svg.jpeg">
+            <p>Burger King</p>
+        </div>
+
+    </div>
+
+</section>
+<!------Testimonials----->
+<section class="testimonials">
+    <div class="title">
+        <h2>What Our Customers Say</h2>
+        <a href="#">View All</a>
+
+    </div>
+    <div class="testimonial-box">
+        <div class="testimonial-card">
+            <img src="images/person3.png" alt="">
+<h3>harry jason</h3>
+<div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <p>
+                Amazing food quality and super fast delivery.
+                Highly recommended!
+            </p>
+
+        </div>
+        <div class="testimonial-card">
+
+            <img src="images/person2.png" alt="">
+
+            <h3>Rahul Patil</h3>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Fresh food, excellent taste and affordable prices.
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="images/person1.png" alt="">
+
+            <h3>Sneha Joshi</h3>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Best online food delivery website. Loved it!
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-----footer------>
+<!----- Footer ----->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>FreshBite</h2>
+
+            <p>
+                Fresh food delivered to your doorstep with love,
+                quality and fast service.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+
+            <p>Email : freshbite@gmail.com</p>
+            <p>Phone : +91 9876543210</p>
+            <p>Mumbai, India</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 FreshBite. All Rights Reserved.
+    </p>
+
+</footer>
+<button id="topBtn" onclick="topfunction()">
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+<script src="js/script.js">
+
+</script>
+</body>
+</html>
