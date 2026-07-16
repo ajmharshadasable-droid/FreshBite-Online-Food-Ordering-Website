@@ -30,16 +30,16 @@ FreshBite is a responsive online food ordering website developed using HTML, CSS
 ## 📸 Screenshots
 
 ### Home Page
-![Home](screenshots/Home.png)
+![Home](project/Home.png)
 
 ### Menu Page
-![Menu](screenshots/Menu.png)
+![Menu](project/Menu.png)
 
 ### Restaurants Page
-![Restaurants](screenshots/Restaurants.png)
+![Restaurants](project/Restaurants.png)
 
 ### Cart Page
-![Cart](screenshots/Cart.png)
+![Cart](project/Cart.png)
 
 ### Checkout Page
-![Checkout](screenshots/Checkout.png)
+![Checkout](project/Checkout.png)
